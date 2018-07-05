@@ -18,12 +18,12 @@ namespace App.UnitTest
      * like 'lastOrderTime'.
      * 
     */ 
-    public class UnitTest1
+    public class CustomerTest
     {
-        // Customer test
+        // Customer test Customer.FirstName
         // When everything is beautiful...
         [Fact]
-        public void CustomerShouldPassFirstNameAssigment()
+        public void CustomerFirstNameShouldPassAssigment()
         {
             // Arrange
             string firstName = "Jean";
@@ -40,10 +40,11 @@ namespace App.UnitTest
             Assert.Equal(firstName, actual);
         }
 
-        // Customer test
+
+        // Customer test Customer.LastName
         // When everything is beautiful...
         [Fact]
-        public void CustomerShouldPassLastNameAssigment()
+        public void CustomerLastNameShouldPassAssigment()
         {
             // Arrange
             string lastName = "Semprit";
@@ -60,10 +61,11 @@ namespace App.UnitTest
             Assert.Equal(lastName, actual);
         }
 
-        // Customer test
+
+        // Customer test PreferedLocation
         // When everything is beautiful...
         [Fact]
-        public void CustomerShouldPassPreferedLocationAssigment()
+        public void CustomerPreferedLocatioShouldPassnAssigment()
         {
             // Arrange
             string preferedLocation = "Reston";
@@ -80,10 +82,11 @@ namespace App.UnitTest
             Assert.Equal(preferedLocation, actual);
         }
 
-        // Customer test
+
+        // Customer test Customer.LastTimeOrdered
         // When everything is beautiful...
         [Fact]
-        public void CustomerShouldPassLastTimeOrderedAssigment()
+        public void CustomerLastTimeOrdereShouldPassdAssigment()
         {
             // Arrange
             DateTime lastTimeOrdered = new DateTime();
@@ -100,12 +103,12 @@ namespace App.UnitTest
             Assert.Equal(lastTimeOrdered, actual);
         }
 
-        // Customer test
-        // When everything is beautiful...
+
+        /*
+        // Customer test Customer.FirstName
         [Fact]
-        public void CustomerShouldNotAcceptEmptyString()
+        public void CustomerFirstNameShouldNotAcceptEmptyString()
         {
-            /*
             TODO
             Ask Nick about testing if code catch the error
 
@@ -118,7 +121,28 @@ namespace App.UnitTest
 
             // Assert
             Assert.Throws<ArgumentException>( "FirstName", action);
-            */
         }
+        */
+
+
+        /*
+        // Customer test Customer.LastName
+        [Fact]
+        public void CustomerLastNameShouldNotAcceptEmptyString()
+        {
+            TODO
+            Ask Nick about testing if code catch the error
+
+            // Arrange
+            string LastName = "";
+            Customer customer = new Customer();
+
+            // Act
+            void action() => customer.LastName = LastName;
+
+            // Assert
+            Assert.Throws<ArgumentException>( "LastName", action);
+        }
+        */
     }
 }
