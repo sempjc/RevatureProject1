@@ -16,4 +16,7 @@
   <ItemGroup>
     <ProjectReference Include="..\App.Library\App.Library.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CustomerTest.cs" />
+  </ItemGroup>
 </Project>
