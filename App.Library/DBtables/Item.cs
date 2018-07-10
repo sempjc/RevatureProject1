@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace App.Library
+namespace App.data
 {
     public partial class Item
     {

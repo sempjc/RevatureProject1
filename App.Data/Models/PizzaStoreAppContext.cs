@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace App.Library
+namespace App.Data
 {
     public partial class PizzaStoreAppContext : DbContext
     {
